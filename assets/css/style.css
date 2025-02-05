@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-label {
+    margin-bottom: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Change the white to any color */
+input:-webkit-autofill {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 0 0px 1000px #CAB294 inset !important;
+    /* Match your form background */
+    color: inherit !important;
+    /* Keep text color unchanged */
+}
+
+
+.form-control {
+    padding: .375rem 0.4rem;
+    font-size: 1rem;
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.form-control:focus {
+    color: var(--bs-body-color);
+    border-color: #86b7fe;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+body {
+    background-color: beige;
+}
+
+.wrapper {
+    background-color: #CAB294;
+    max-width: 1000px;
+    width: 100%;
+    margin: 42px auto;
+    display: flex;
+    border-radius: 10px;
+
+}
+
+.wrapper .image_div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .image_div .yoga_img {
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.wrapper .form_div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .form_div h2 {
+    margin: 21px 0;
+}
+
+.wrapper .form_div #registrationForm {
+    width: 67%;
+}
+
+.wrapper .form_div #registrationForm .btn-primary {
+    margin: 14px 0 41px 0;
+    --bs-btn-bg: #7B2A2A;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-bg: #5f2424;
+    --bs-btn-hover-border-color: none;
+    --bs-btn-active-bg: #5f2424;
+    --bs-btn-disabled-bg: none;
+    --bs-btn-disabled-border-color: none;
+}
+
+.checkbox_div {
+    text-align: left;
+}
+
+#agreement {
+    width: 20px;
+    height: 16px;
+    position: relative;
+    top: 2px;
+}
+
+/* .checkbox_div span {
+    text-decoration: underline;
+    color: #2d2dec;
+    cursor: pointer;
+} */
+
+/* Guidelines */
+.enrollment-guidelines {
+    background: #f8f9fa;
+    /* Light gray background */
+    padding: 10px;
+    border-left: 4px solid #007bff;
+    /* Blue side border */
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.enrollment-guidelines ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.enrollment-guidelines li::before {
+    content: "✔️";
+    margin-right: 5px;
+    color: green;
+}
+
+.enrollment-guidelines span {
+    position: absolute;
+    top: 6px;
+    right: 24px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: red;
+}
+
+.enrollment-guidelines span:hover {
+    color: var(--bs-heading-color);
+}
+
+/* .guidelines_div {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+} */
+
+@media screen and (max-width: 1000px) {
+
+    .wrapper {
+        margin: 35px auto;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+        max-width: 700px;
+    }
+
+    .wrapper .form_div {
+        width: 100%;
+    }
+}
