@@ -2,6 +2,9 @@
 
 This project implements an online admission form for enrolling in monthly Yoga classes. It allows users to input their details, select a batch, and submit the form. The solution is built using HTML, CSS, JavaScript, and PHP for the backend to handle user data and API requests.
 
+* Website URL :
+http://flexmoneyyoga.infinityfreeapp.com/
+
 * Requirements:
 - Age Limit: Only individuals aged between 18-65 can enroll.
 - Monthly Payment: The fee is ₹500 INR per month, and payment can be made at any time during the month.
@@ -41,3 +44,4 @@ This project implements an online admission form for enrolling in monthly Yoga c
 - Field Validation for all input fields
 - Responsive Design
 - Success Message using SweetAlert
+
