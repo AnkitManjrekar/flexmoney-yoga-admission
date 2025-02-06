@@ -38,10 +38,11 @@ http://flexmoneyyoga.infinityfreeapp.com/
 - The API will store the data in the MySQL database and return the response to the frontend.
 - Upon receiving the response, a success message will be displayed.
 
-* Additional:
-- Checkbox to Agree to Terms
-- Instructions for users
+* Additional Features:
+- Checkbox to confirm agreement with the Terms & Conditions
+- Guidelines for users
 - Field Validation for all input fields
-- Responsive Design
+- Fully responsive design for different screen sizes
 - Success Message using SweetAlert
+- Implemented protection against SQL injection
 
